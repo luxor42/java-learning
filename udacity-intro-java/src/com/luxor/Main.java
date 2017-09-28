@@ -19,10 +19,10 @@ public class Main {
         System.out.println(bankBalance);
 
         int day;
-        String month;
+        String my_month;
         day = 18;
-        month = "September";
-        System.out.println(month + " " + day);
+        my_month = "September";
+        System.out.println(my_month + " " + day);
 
         String firstName = "Ryan";
         String lastName = "Luck";
@@ -61,7 +61,65 @@ public class Main {
             System.out.println("Windshield Wipers On");
         }
 
+        // Automated discount program
+        int ticketPrice = 10;
+        int age = 20;
+        boolean isStudent = true;
+
+        if(age <= 15 || age > 60 || isStudent) {
+            ticketPrice = 5;
+        }
+
+        System.out.println("Ticket Price is " + ticketPrice);
+
+
+        int passcode = 629;
+        String coffeeType;
+        switch(passcode) {
+            case 555: coffeeType = "Espresso";
+                break;
+            case 312: coffeeType = "Vanilla latte";
+                break;
+            case 629: coffeeType = "Drip coffee";
+                break;
+            default : coffeeType = "Unknown";
+                break;
+        }
+        System.out.println(coffeeType);
+
+        int month = 36;
+        String monthString;
+        switch(month) {
+            case 1: monthString = "January";
+                break;
+            case 2: monthString = "February";
+                break;
+            case 3: monthString = "March";
+                break;
+            case 4: monthString = "April";
+                break;
+            case 5: monthString = "May";
+                break;
+            case 6: monthString = "June";
+                break;
+            case 7: monthString = "July";
+                break;
+            case 8: monthString = "August";
+                break;
+            case 9: monthString = "September";
+                break;
+            case 10: monthString = "October";
+                break;
+            case 11: monthString = "November";
+                break;
+            case 12: monthString = "December";
+                break;
+            default: monthString = "Invalid month: " + month;
+        }
+        System.out.println(monthString);
+
     }
+
 
 
 
